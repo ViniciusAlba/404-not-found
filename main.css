@@ -1,34 +1,111 @@
-body {
-    font-family: "Poppins", sans-serif;
-  }
+html {
+    width: 100wh;
+    height: 100hv;
+}
 
-  ul {
-    padding-left: 24px;
-  }
+/* h3 "404 NOT FOUND". */
+h3 {
+    font-family: 'Inconsolata', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
 
-  li {
-    margin-bottom: 8px;
-  }
+    margin: 44px 0px 0px 250px;
 
-  .welcome {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+    color: #333333;
+}
 
-  .welcome-text {
-    margin-top: 30vh;
+/* Container with all content. */
+.container {
+    margin: 0px 250px;
+    display: grid;
+    grid-template-columns: 539.22px 586px;
+    grid-column-gap: 250px;
+}
+
+/* Div with Scarecrow image. */
+.scarecrow {
+    height: 500px;
+}
+
+/* Scarecrow image. */
+img {
+    width: 539.22px;
+    height: 447.43px;
+    margin: 150px 0px 367.57px 0px;
+}
+
+/* Div with h1, p and the button. */
+.info-error {
+    margin: 100px 0px 0px 0px;
+    height: 500px;
+}
+
+/* Title "I Have Bad News For You". */
+h1 {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+
+    color: #333333;
+}
+
+/* Paragraph with some informations about the page. */
+.info-error p {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+
+    color: #4F4F4F;
+}
+
+/* Button BACK TO HOMEPAGE*/
+#back-home {
+    width: 216px;
+    height: 68px;
+    border: none;
+
+    background: #333333;
+
+    font-family:'Space Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    margin: 50px 0px 0px 0px;
+}
+
+#back-home:hover {
+    cursor: pointer;
+}
+
+/* Footer with the name of the author. */ 
+footer  p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     font-weight: 500;
-  }
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
 
-  .welcome-text p {
-    font-size: 1rem;
-    font-weight: 400;
-  }
+    color: #BDBDBD;
 
-  .welcome-text h1 {
-    font-size: 1.5rem;
-  }
-
-  .welcome-text a {
-    color: #f7542e;
-  }
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    right: 40%;
+}
