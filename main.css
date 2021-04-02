@@ -1,10 +1,27 @@
-html {
-    width: 100wh;
-    height: 100hv;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-/* h3 "404 NOT FOUND". */
-h3 {
+.container {
+    width: 1440px;
+
+    display: grid;
+    grid-template-areas:
+    "scarecrow scarecrow info-error"
+    "footer footer footer";
+    grid-template-rows: 98vh;
+
+    margin: auto;
+}
+
+.scarecrow {
+    grid-area: scarecrow;
+
+    margin-top: 50px;
+}
+
+.scarecrow h3 {
     font-family: 'Inconsolata', monospace;
     font-style: normal;
     font-weight: bold;
@@ -13,39 +30,25 @@ h3 {
     letter-spacing: -0.08em;
     text-transform: uppercase;
 
-    margin: 44px 0px 0px 250px;
-
     color: #333333;
 }
 
-/* Container with all content. */
-.container {
-    margin: 0px 250px;
-    display: grid;
-    grid-template-columns: 539.22px 586px;
-    grid-column-gap: 250px;
+.scarecrow img {
+    width: 500px;
+    height: 400px;
+
+    margin-top: 150px;
 }
 
-/* Div with Scarecrow image. */
-.scarecrow {
-    height: 500px;
-}
-
-/* Scarecrow image. */
-img {
-    width: 539.22px;
-    height: 447.43px;
-    margin: 150px 0px 367.57px 0px;
-}
-
-/* Div with h1, p and the button. */
 .info-error {
-    margin: 100px 0px 0px 0px;
-    height: 500px;
+    grid-area: info-error;
+
+    margin-top: 200px;
 }
 
-/* Title "I Have Bad News For You". */
-h1 {
+.info-error h1 {
+    max-width: 600px;
+
     font-family: 'Space Mono', monospace;
     font-style: normal;
     font-weight: bold;
@@ -56,8 +59,9 @@ h1 {
     color: #333333;
 }
 
-/* Paragraph with some informations about the page. */
 .info-error p {
+    max-width: 385px;
+
     font-family: 'Space Mono', monospace;
     font-style: normal;
     font-weight: normal;
@@ -66,15 +70,22 @@ h1 {
     letter-spacing: -0.035em;
 
     color: #4F4F4F;
+
+    margin-top: 30px;
 }
 
-/* Button BACK TO HOMEPAGE*/
 #back-home {
     width: 216px;
     height: 68px;
     border: none;
 
     background: #333333;
+
+    margin-top: 50px;
+}
+
+#back-home a {
+    text-decoration: none;
 
     font-family:'Space Mono', monospace;
     font-style: normal;
@@ -83,18 +94,16 @@ h1 {
     line-height: 21px;
     letter-spacing: -0.035em;
     text-transform: uppercase;
+    text-align: center;
 
     color: #FFFFFF;
-
-    margin: 50px 0px 0px 0px;
 }
 
-#back-home:hover {
-    cursor: pointer;
+.footer {
+    grid-area: footer;
 }
 
-/* Footer with the name of the author. */ 
-footer  p {
+.footer  p {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -103,9 +112,164 @@ footer  p {
     text-align: center;
 
     color: #BDBDBD;
+}
 
-    position: absolute;
-    bottom: 0;
-    left: 40%;
-    right: 40%;
+.footer a {
+    text-decoration: none;
+    color: #BDBDBD;
+}
+
+@media (max-width: 540px) {
+
+    .container {
+
+        justify-content: center;
+
+        width: 365px;
+    
+        display: grid;
+        grid-template-areas:
+        "scarecrow"
+        "info-error"
+        "footer";
+    
+        margin: auto;
+    }
+    
+    .scarecrow {
+        grid-area: scarecrow;
+
+        height: 300px;
+
+        margin-left: 30px;
+    }
+    
+    .scarecrow h3 {
+        font-family: 'Inconsolata', monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 25px;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+    
+        color: #333333;
+
+        margin-top: 20px;
+    }
+    
+    .scarecrow img {
+        width: 286.83px;
+        height: 238px;
+    
+        margin-top: 50px;
+    }
+    
+    .info-error {
+        grid-area: info-error;
+    
+        margin-top: -400px;
+        margin-left: 30px;
+    }
+    
+    .info-error h1 {
+        width: 300px;
+        height: 200px;
+    
+        font-family: 'Space Mono', monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 50px;
+        letter-spacing: -0.060em;
+    
+        color: #333333;
+    }
+    
+    .info-error p {
+        width: 350px;
+        height: 150px;
+    
+        font-family: 'Space Mono', monospace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -0.015em;
+    
+        color: #4F4F4F;
+    
+        margin-top: -60px;
+    }
+    
+    #back-home {
+        width: 200px;
+        height: 68px;
+        border: none;
+    
+        background: #333333;
+    
+        font-family:'Space Mono', monospace;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: -0.020em;
+        text-transform: uppercase;
+        text-align: center;
+    
+        color: #FFFFFF;
+    
+        margin-top: -30px;
+    }
+    
+    #back-home:hover {
+        cursor: pointer;
+    }
+    
+    .footer {
+        grid-area: footer;
+
+        margin-top: 0px;
+    }
+    
+    .footer  p {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+    
+        color: #BDBDBD;
+    }
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 540px) and (max-width: 767.98px) {
+
+    
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+
+
 }
