@@ -42,9 +42,13 @@
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
+    [Netlify](https://unruffled-spence-c9573a.netlify.app/)
 - What was your experience?
+    Was exciting, principally when you see what you can do.
 - What have you learned/improved?
+    I needed to know more about responsive websites. I think that was the most difficult of the challenge.
 - Your wisdom? :)
+    I learned how to use media queries.
 
 ### Built With!
 
@@ -63,7 +67,7 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Acknowledgements
 
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
+<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example -->
 
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
@@ -71,5 +75,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@your-username](https://{github.com/ViniciusAlba})
-- Twitter [@your-twitter](https://{twitter.com/viniciusAlbaa})
+- GitHub [@ViniciusAlba](https://{www.github.com/ViniciusAlba})
+- Twitter [@viniciusnitram](https://{www.twitter.com/viniciusnitram})
